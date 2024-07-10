@@ -53,6 +53,21 @@ Mushroom is available in [HACS][hacs] (Home Assistant Community Store).
             - url: /local/mushroom.js
               type: module
         ```
+### Manual build
+
+1. Build `mushroom.js` in `/dist` folder by running the script: `./build-with-docker.sh -b`
+2. Add a version identifier to the `mushroom.js` file, by incrementing the last deployed version (i.e. `mushroom-v0.0.17.js`)
+3. Put `mushroom.js` file into your `config/www` folder.
+4. Add reference to `mushroom.js` in Dashboard. There's two way to do that:
+   - **Using UI:** _Settings_ → _Dashboards_ → _More Options icon_ → _Resources_ → _Add Resource_ → Set _Url_ as `/local/mushroom.js` → Set _Resource type_ as `JavaScript Module`.
+     <br>**[Resources link](http://homeassistant.local:8123/config/lovelace/resources)**
+     <br>**Note:** If you do not see the Resources menu, you will need to enable _Advanced Mode_ in your _User Profile_
+   - **Using YAML:** Add following code to `lovelace` section.
+       ```yaml
+       resources:
+           - url: /local/mushroom.js
+             type: module
+       ```
 
 ## Usage
 

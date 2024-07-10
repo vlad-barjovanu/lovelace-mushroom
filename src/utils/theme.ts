@@ -51,9 +51,12 @@ export const themeVariables = css`
     );
     /* Controls */
     --control-border-radius: var(--mush-control-border-radius, 12px);
+    --control-border-radius-round: var(--mush-control-border-radius, 50%);
     --control-height: var(--mush-control-height, 40px);
+    --control-round-height: var(--mush-control-height, 90px);
     --control-button-ratio: var(--mush-control-button-ratio, 1);
     --control-icon-size: var(--mush-control-icon-size, 0.5em);
+    --control-round-icon-size: var(--mush-control-icon-size, 1.125em);
 
     /* Slider */
     --slider-threshold: var(--mush-slider-threshold);
@@ -73,6 +76,9 @@ export const themeVariables = css`
     --icon-border-radius: var(--mush-icon-border-radius, 50%);
     --icon-size: var(--mush-icon-size, 40px);
     --icon-symbol-size: var(--mush-icon-symbol-size, 0.6em);
+
+    /* Button round */
+    --button-round-background: var(--mush-button-round-background, transparent);
 `;
 
 export const themeColorCss = css`
@@ -108,7 +114,7 @@ export const themeColorCss = css`
     --rgb-success: var(--mush-rgb-success, var(--rgb-green));
     --rgb-warning: var(--mush-rgb-warning, var(--rgb-orange));
     --rgb-danger: var(--mush-rgb-danger, var(--rgb-red));
-
+    
     /* State colors */
     --rgb-state-vacuum: var(--mush-rgb-state-vacuum, var(--rgb-teal));
     --rgb-state-fan: var(--mush-rgb-state-fan, var(--rgb-green));
@@ -143,6 +149,9 @@ export const themeColorCss = css`
     /* State cover colors */
     --rgb-state-cover-open: var(--mush-rgb-state-cover-open, var(--rgb-blue));
     --rgb-state-cover-closed: var(--mush-rgb-state-cover-closed, var(--rgb-disabled));
+    --rgb-button-cover-open: var(--mush-rgb-cover-up, var(--rgb-blue));
+    --rgb-button-cover-close: var(--mush-rgb-cover-down, var(--rgb-blue));
+    --rgb-button-cover-stop: var(--mush-rgb-cover-stop, var(--rgb-red));
 
     /* State climate colors */
     --rgb-state-climate-auto: var(--mush-rgb-state-climate-auto, var(--rgb-green));
