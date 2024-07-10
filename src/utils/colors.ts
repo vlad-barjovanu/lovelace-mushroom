@@ -59,12 +59,15 @@ function capitalizeFirstLetter(string) {
 
 export const defaultColorCss = css`
     --default-red: 244, 67, 54;
+    --default-light-red: 238, 75, 43;
+    --default-dark-red: 139, 0, 0;
     --default-pink: 233, 30, 99;
     --default-purple: 106, 107, 201;
     --default-deep-purple: 111, 66, 193;
     --default-indigo: 63, 81, 181;
     --default-blue: 33, 150, 243;
     --default-light-blue: 3, 169, 244;
+    --default-dark-blue: 0, 0, 139;
     --default-cyan: 0, 188, 212;
     --default-teal: 0, 150, 136;
     --default-green: 76, 175, 80;

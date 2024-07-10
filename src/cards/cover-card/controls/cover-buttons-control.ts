@@ -67,6 +67,7 @@ export class CoverButtonsControl extends LitElement {
                           <mushroom-button
                               .disabled=${!isAvailable(this.entity) || this.openDisabled}
                               round="true"
+                              gradient="true"
                               btnClass="open-button"
                               @click=${this._onOpenTap}
                           >
@@ -79,10 +80,11 @@ export class CoverButtonsControl extends LitElement {
                           <mushroom-button
                               .disabled=${!isAvailable(this.entity)}
                               round="true"
+                              gradient="true"
                               btnClass="stop-button"
                               @click=${this._onStopTap}
                           >
-                              <ha-icon icon="mdi:stop-circle"></ha-icon>
+                              <ha-icon icon="mdi:stop-circle-outline"></ha-icon>
                           </mushroom-button>
                       `
                     : undefined}
@@ -91,6 +93,7 @@ export class CoverButtonsControl extends LitElement {
                           <mushroom-button
                               .disabled=${!isAvailable(this.entity) || this.closedDisabled}
                               round="true"
+                              gradient="true"
                               btnClass="close-button"
                               @click=${this._onCloseTap}
                           >

@@ -85,12 +85,15 @@ export const themeColorCss = css`
     /* RGB */
     /* Standard colors */
     --rgb-red: var(--mush-rgb-red, var(--default-red));
+    --rgb-dark-red: var(--mush-rgb-red, var(--default-dark-red));
+    --rgb-light-red: var(--mush-rgb-red, var(--default-light-red));
     --rgb-pink: var(--mush-rgb-pink, var(--default-pink));
     --rgb-purple: var(--mush-rgb-purple, var(--default-purple));
     --rgb-deep-purple: var(--mush-rgb-deep-purple, var(--default-deep-purple));
     --rgb-indigo: var(--mush-rgb-indigo, var(--default-indigo));
     --rgb-blue: var(--mush-rgb-blue, var(--default-blue));
     --rgb-light-blue: var(--mush-rgb-light-blue, var(--default-light-blue));
+    --rgb-dark-blue: var(--mush-rgb-light-blue, var(--default-dark-blue));
     --rgb-cyan: var(--mush-rgb-cyan, var(--default-cyan));
     --rgb-teal: var(--mush-rgb-teal, var(--default-teal));
     --rgb-green: var(--mush-rgb-green, var(--default-green));
@@ -149,9 +152,21 @@ export const themeColorCss = css`
     /* State cover colors */
     --rgb-state-cover-open: var(--mush-rgb-state-cover-open, var(--rgb-blue));
     --rgb-state-cover-closed: var(--mush-rgb-state-cover-closed, var(--rgb-disabled));
-    --rgb-button-cover-open: var(--mush-rgb-cover-up, var(--rgb-blue));
-    --rgb-button-cover-close: var(--mush-rgb-cover-down, var(--rgb-blue));
-    --rgb-button-cover-stop: var(--mush-rgb-cover-stop, var(--rgb-red));
+    
+    --rgb-button-cover-open-1: var(--mush-rgb-button-cover-open-1, var(--rgb-light-blue));
+    --rgb-offset-button-cover-open-1: var(--mush-rgb-offset-button-cover-open-1, 15%);
+    --rgb-button-cover-open-2: var(--mush-rgb-button-cover-open-2, var(--rgb-dark-blue));
+    --rgb-offset-button-cover-open-2: var(--mush-rgb-offset-button-cover-open-2, 85%);
+    
+    --rgb-button-cover-close-1: var(--mush-rgb-button-cover-close-1, var(--rgb-light-blue));
+    --rgb-offset-button-cover-close-1: var(--mush-rgb-offset-button-cover-close-1, 15%);
+    --rgb-button-cover-close-2: var(--mush-rgb-button-cover-close-2, var(--rgb-dark-blue));
+    --rgb-offset-button-cover-close-2: var(--mush-rgb-offset-button-cover-close-2, 85%);
+    
+    --rgb-button-cover-stop-1: var(--mush-rgb-button-cover-stop-1, var(--rgb-light-red));
+    --rgb-offset-button-cover-stop-1: var(--mush-rgb-offset-button-cover-stop-1, 5%);
+    --rgb-button-cover-stop-2: var(--mush-rgb-button-cover-stop-2, var(--rgb-dark-red));
+    --rgb-offset-button-cover-stop-2: var(--mush-rgb-offset-button-cover-stop-2, 95%);
 
     /* State climate colors */
     --rgb-state-climate-auto: var(--mush-rgb-state-climate-auto, var(--rgb-green));
