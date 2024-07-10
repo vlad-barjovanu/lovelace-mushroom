@@ -8,7 +8,7 @@ export const computeOpenIcon = (stateObj: HassEntity): string => {
         case "gate":
             return "mdi:arrow-expand-horizontal";
         default:
-            return "mdi:arrow-up";
+            return "mdi:arrow-up-bold-circle-outline";
     }
 };
 
@@ -20,6 +20,6 @@ export const computeCloseIcon = (stateObj: HassEntity): string => {
         case "gate":
             return "mdi:arrow-collapse-horizontal";
         default:
-            return "mdi:arrow-down";
+            return "mdi:arrow-down-bold-circle-outline";
     }
 };
